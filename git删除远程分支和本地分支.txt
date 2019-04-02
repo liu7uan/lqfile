@@ -1,0 +1,41 @@
+git删除远程分支和本地分支 
+
+
+
+
+问题描述：
+
+      当我们集体进行项目时，将自定义分支push到主分支master之后，如何删除远程的自定义分支呢
+
+问题解决：
+
+       （1）使用命令git branch -a 查看所有分支
+
+所有分支
+
+注：        
+
+       其中，remote/origin/master表示的是远程分支
+
+      （2）删除远程分支    
+
+删除远程分支
+
+注：
+
+        如上所示，使用命令 git push origin --delete Chapater6   可以删除远程分支Chapater6    
+
+        再次使用命令 git branch -a   可以发现，远程分支Chapater6已经被删除。
+
+（3）删除本地分支
+
+           使用命令，git branch -d Chapater8 可以删除本地分支（在主分支中）
+
+删除本地分支
+
+注：
+
+           如上图所示，在从Chapater8分支切换到master分支，git checkout  master
+
+然后使用 git branch -d Chapater8 可以删除Chapater8分支。
+
